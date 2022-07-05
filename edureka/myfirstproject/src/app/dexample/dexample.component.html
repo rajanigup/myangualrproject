@@ -1,0 +1,28 @@
+<p>dexample works!</p>
+<p *ngIf="5>3">{{myData}}</p>
+<p *ngIf="5==5">{{myData}}</p>
+<p *ngIf="5<3">{{myData}}</p>
+<p *ngIf="myData.length>3">{{myData}}</p>
+<p *ngIf="myBoolean">b{{myData}}</p>
+<p *ngIf="!myBoolean">b1{{myData}}</p>
+<p>{{myData.length}}</p>
+<button *ngIf="myBoolean" (click)="myTrue()">True -{{myData}}</button>
+<button *ngIf="!myBoolean"  (click)="myFalse()">False-{{myData}}</button>
+<p *ngIf="myBoolean; else anotherButton">{{myData}} <button>Edit</button></p>
+<ng-template #anotherButton>
+    <p>{{myData}}-Inside template</p>
+    <button>Update</button>
+</ng-template>
+
+
+<p>for </p>
+
+<ol>
+    <li  *ngFor="let myvar of myArray">
+        {{myvar.empId}} -  {{myvar.name}}
+    </li>
+    
+</ol>
+<p appMyCustomDirective>
+    Hey I am from planet jupitor
+</p>

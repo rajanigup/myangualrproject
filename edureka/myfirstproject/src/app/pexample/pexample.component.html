@@ -1,0 +1,23 @@
+<p>pexample works!</p>
+<p>{{myString}}</p>
+<p>{{myString | uppercase}}</p>
+<p>{{myString | lowercase}}</p>
+<p>{{myString | titlecase}}</p>
+<p>{{myString | slice:0:3}}</p>
+<p>{{myString | slice:18:24}}</p>
+<p> {{myNumber | currency}}</p>
+<p> {{myNumber | currency:'EUR'}}</p>
+<p> {{myNumber | currency:'INR'}}</p>
+<p> {{myPercentage | percent}}</p>
+<p>{{myDecimal | number:'2.02'}}</p>
+<p>{{myDecimal | number:'3.02'}}</p>
+<p>{{myDecimal | number:'2.00'}}</p>
+<p>{{myDate}}</p>
+<p>{{myDate | date:'full'}}</p>
+<p>{{myDate | date:'long'}}</p>
+<p>{{myDate | date:'medium'}}</p>
+<p>{{myDate | date:'shortng g '}}</p>
+<p>{{myDate | date:'dd-MM-yyyy'}}</p>
+<p>=====================================Custom Pipes=====================================================</p>
+<input type="password" [(ngModel)]="myPassword">
+<p>{{myPassword | mycustom}}</p>

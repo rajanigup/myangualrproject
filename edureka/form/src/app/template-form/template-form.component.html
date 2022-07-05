@@ -1,0 +1,53 @@
+<div class="d-flex justify-content-center">
+    <div class="card m-3">
+            <h5 class="card-header">User Registration using Template-Driven Form </h5>
+            <div class="card-body">
+            <form >
+                <div class="form-row">
+                <div class="form-group col">
+                    <input type="text" class="form-control" name="fullName" placeholder="Full Name" />
+                   
+                </div>
+                </div>
+                <div class="form-row">
+                <div class="form-group col">
+                    <input type="text" class="form-control" name="email" placeholder="Email"/>
+                   
+                </div>
+                </div>
+                <div class="form-row">
+                <div class="form-group col">
+                    <input type="text" class="form-control" name="phone" placeholder="Phone No." />
+                   
+                </div>
+                </div>
+                <div class="form-row">
+                <div class="form-group col">
+                    <input type="password" class="form-control" name="password" placeholder="
+                    Password"/>
+                   
+                </div>
+                </div>
+                <div class="form-row">
+                <div class="form-group col">
+                    <input type="password" class="form-control" name="cpassword" placeholder="Confirm Password"/>
+                   
+                </div>
+                </div>
+                <div class="form-row">
+                <div  class="form-group form-check">
+                    <input type="checkbox" name="acceptTerms" id="acceptTerms" class="form-check-input" >
+                    <label for="acceptTerms" class="form-check-label">Agree with Terms & Conditions</label>
+                    
+                   
+                </div>
+               
+                </div>
+                <button class="btn btn-success" type="submit" (click)="onSubmit()">
+                    Sign Up
+                </button>
+
+            </form>
+        </div>
+    </div>
+</div>

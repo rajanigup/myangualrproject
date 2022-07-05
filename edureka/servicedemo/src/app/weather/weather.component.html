@@ -1,0 +1,8 @@
+<p>weather works!</p>
+<div class="form-group">
+    <input class="form-control" type="text" [(ngModel)]="cityName" (input)="onDataIn($event)"> 
+    <button class="btn btn-danger" (click)="onSubmitFetch()"  [disabled]="buttonValue">Click here to fetch the weather details</button>
+</div>
+<p>Data printed</p>
+<p>{{weatherData.name}}</p>
+<p>{{weatherData.id}}</p>
